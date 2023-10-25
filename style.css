@@ -1,0 +1,55 @@
+/* 1. Sem definições de linhas
+
+So comentar o grid column
+
+2. Como defeinir em notação de fração
+
+.item1 {
+  grid-column: 1/3;
+
+3. É possível fazer a responsividade vertical?
+
+ grid-row: 1/3
+
+4. Colocar o código no VSCODE.
+
+5. Usar media queries para definir quantidades divferentes de colunas.
+
+
+# Primeiro Mobile.
+
+@media screen and (min-width:???) {
+
+} */
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  /* grid-column-start: 1;
+  grid-column-end: 3;
+  */ 
+  /*grid-column: 1/3;*/
+  grid-row: 1/3;
+}
+
+@media screen and (min-width: 400px) { 
+  
+  .grid-container {
+    grid-template-columns: auto auto auto;
+  }
+  
+}
